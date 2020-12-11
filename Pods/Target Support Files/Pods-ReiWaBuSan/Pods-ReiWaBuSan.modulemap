@@ -1,0 +1,6 @@
+framework module Pods_ReiWaBuSan {
+  umbrella header "Pods-ReiWaBuSan-umbrella.h"
+
+  export *
+  module * { export * }
+}

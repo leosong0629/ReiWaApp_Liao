@@ -3,19 +3,45 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7661F4B5257CE1A000245EBB /* ReiWaBuSanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FEEF0F25752EE30042225E /* ReiWaBuSanTests.swift */; };
+		767ED468258304EF0099E634 /* MailContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767ED467258304EF0099E634 /* MailContentViewController.swift */; };
+		767ED46A258329160099E634 /* TempData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767ED469258329150099E634 /* TempData.swift */; };
+		767ED46C2583366C0099E634 /* CartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767ED46B2583366C0099E634 /* CartData.swift */; };
+		767ED46F25837F300099E634 /* CartItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767ED46D25837F300099E634 /* CartItemCell.swift */; };
+		767ED47025837F300099E634 /* CartItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 767ED46E25837F300099E634 /* CartItemCell.xib */; };
+		767ED4722583A2770099E634 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767ED4712583A2770099E634 /* CartViewController.swift */; };
+		768287772577B45A008617A3 /* SelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768287762577B45A008617A3 /* SelectViewController.swift */; };
+		768287792577C4E4008617A3 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768287782577C4E4008617A3 /* RegisterViewController.swift */; };
+		7682877B2577DA0A008617A3 /* CustomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7682877A2577DA0A008617A3 /* CustomerViewController.swift */; };
+		7682877D2577F298008617A3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7682877C2577F298008617A3 /* GoogleService-Info.plist */; };
+		7683F638257CEB80007EB866 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7683F637257CEB80007EB866 /* SceneDelegate.swift */; };
+		7683F63C257CF9E6007EB866 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7683F63B257CF9E6007EB866 /* Message.swift */; };
+		7683F63E257CFE0E007EB866 /* HelpDeskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7683F63D257CFE0E007EB866 /* HelpDeskViewController.swift */; };
+		768701CE257B768A0011C0E6 /* QRcodeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768701CD257B768A0011C0E6 /* QRcodeData.swift */; };
+		76881811257E592D00024C94 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76881810257E592D00024C94 /* SearchViewController.swift */; };
+		76881814257E5A9B00024C94 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76881812257E5A9B00024C94 /* MessageCell.swift */; };
+		76881815257E5A9B00024C94 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76881813257E5A9B00024C94 /* MessageCell.xib */; };
+		76881818257E8A6000024C94 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 76881817257E8A6000024C94 /* IQKeyboardManagerSwift */; };
+		768F57442579204D0071EA7D /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768F57432579204D0071EA7D /* Constant.swift */; };
+		76AB432125822A2C009742DF /* MailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AB431F25822A2C009742DF /* MailCell.swift */; };
+		76AB432225822A2C009742DF /* MailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76AB432025822A2C009742DF /* MailCell.xib */; };
+		76AB432425822A6F009742DF /* MailBoxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AB432325822A6F009742DF /* MailBoxViewController.swift */; };
+		76AB432625822CE6009742DF /* MailData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AB432525822CE6009742DF /* MailData.swift */; };
+		76E5B3EC2580F81100E332F7 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E5B3EA2580F81100E332F7 /* ItemCell.swift */; };
+		76E5B3ED2580F81100E332F7 /* ItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76E5B3EB2580F81100E332F7 /* ItemCell.xib */; };
+		76E5B3EF2580FD4C00E332F7 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E5B3EE2580FD4C00E332F7 /* Item.swift */; };
 		76FEEEF625752EDF0042225E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FEEEF525752EDF0042225E /* AppDelegate.swift */; };
-		76FEEEF825752EDF0042225E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FEEEF725752EDF0042225E /* SceneDelegate.swift */; };
-		76FEEEFA25752EDF0042225E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FEEEF925752EDF0042225E /* ViewController.swift */; };
+		76FEEEFA25752EDF0042225E /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FEEEF925752EDF0042225E /* LogInViewController.swift */; };
 		76FEEEFD25752EDF0042225E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76FEEEFB25752EDF0042225E /* Main.storyboard */; };
 		76FEEF0025752EDF0042225E /* ReiWaBuSan.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 76FEEEFE25752EDF0042225E /* ReiWaBuSan.xcdatamodeld */; };
 		76FEEF0225752EE20042225E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76FEEF0125752EE20042225E /* Assets.xcassets */; };
 		76FEEF0525752EE20042225E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76FEEF0325752EE20042225E /* LaunchScreen.storyboard */; };
-		76FEEF1025752EE30042225E /* ReiWaBuSanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FEEF0F25752EE30042225E /* ReiWaBuSanTests.swift */; };
 		76FEEF1B25752EE30042225E /* ReiWaBuSanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FEEF1A25752EE30042225E /* ReiWaBuSanUITests.swift */; };
+		C8FEB298FDF06DCB6708AA74 /* Pods_ReiWaBuSan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 554B2409712A5A68E3392187 /* Pods_ReiWaBuSan.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +62,36 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		554B2409712A5A68E3392187 /* Pods_ReiWaBuSan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReiWaBuSan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C793AACB666A33A259FDEAA /* Pods-ReiWaBuSan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReiWaBuSan.release.xcconfig"; path = "Target Support Files/Pods-ReiWaBuSan/Pods-ReiWaBuSan.release.xcconfig"; sourceTree = "<group>"; };
+		767ED467258304EF0099E634 /* MailContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailContentViewController.swift; sourceTree = "<group>"; };
+		767ED469258329150099E634 /* TempData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempData.swift; sourceTree = "<group>"; };
+		767ED46B2583366C0099E634 /* CartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartData.swift; sourceTree = "<group>"; };
+		767ED46D25837F300099E634 /* CartItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartItemCell.swift; sourceTree = "<group>"; };
+		767ED46E25837F300099E634 /* CartItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CartItemCell.xib; sourceTree = "<group>"; };
+		767ED4712583A2770099E634 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		768287762577B45A008617A3 /* SelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectViewController.swift; sourceTree = "<group>"; };
+		768287782577C4E4008617A3 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		7682877A2577DA0A008617A3 /* CustomerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerViewController.swift; sourceTree = "<group>"; };
+		7682877C2577F298008617A3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7683F637257CEB80007EB866 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7683F63B257CF9E6007EB866 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		7683F63D257CFE0E007EB866 /* HelpDeskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpDeskViewController.swift; sourceTree = "<group>"; };
+		768701CD257B768A0011C0E6 /* QRcodeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRcodeData.swift; sourceTree = "<group>"; };
+		76881810257E592D00024C94 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		76881812257E5A9B00024C94 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		76881813257E5A9B00024C94 /* MessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
+		768F57432579204D0071EA7D /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		76AB431F25822A2C009742DF /* MailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailCell.swift; sourceTree = "<group>"; };
+		76AB432025822A2C009742DF /* MailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MailCell.xib; sourceTree = "<group>"; };
+		76AB432325822A6F009742DF /* MailBoxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailBoxViewController.swift; sourceTree = "<group>"; };
+		76AB432525822CE6009742DF /* MailData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailData.swift; sourceTree = "<group>"; };
+		76E5B3EA2580F81100E332F7 /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+		76E5B3EB2580F81100E332F7 /* ItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemCell.xib; sourceTree = "<group>"; };
+		76E5B3EE2580FD4C00E332F7 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		76FEEEF225752EDF0042225E /* ReiWaBuSan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReiWaBuSan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76FEEEF525752EDF0042225E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		76FEEEF725752EDF0042225E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		76FEEEF925752EDF0042225E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		76FEEEF925752EDF0042225E /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		76FEEEFC25752EDF0042225E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		76FEEEFF25752EDF0042225E /* ReiWaBuSan.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ReiWaBuSan.xcdatamodel; sourceTree = "<group>"; };
 		76FEEF0125752EE20042225E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +103,7 @@
 		76FEEF1625752EE30042225E /* ReiWaBuSanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReiWaBuSanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		76FEEF1A25752EE30042225E /* ReiWaBuSanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReiWaBuSanUITests.swift; sourceTree = "<group>"; };
 		76FEEF1C25752EE30042225E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B51073AFA049EDBF0157414A /* Pods-ReiWaBuSan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReiWaBuSan.debug.xcconfig"; path = "Target Support Files/Pods-ReiWaBuSan/Pods-ReiWaBuSan.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +111,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8FEB298FDF06DCB6708AA74 /* Pods_ReiWaBuSan.framework in Frameworks */,
+				76881818257E8A6000024C94 /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +133,68 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		47558595A937D5AC49179B60 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B51073AFA049EDBF0157414A /* Pods-ReiWaBuSan.debug.xcconfig */,
+				5C793AACB666A33A259FDEAA /* Pods-ReiWaBuSan.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5D7E90130B7785423927A49E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				554B2409712A5A68E3392187 /* Pods_ReiWaBuSan.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		768C8EFC257667DB003134D1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				76FEEF0325752EE20042225E /* LaunchScreen.storyboard */,
+				76FEEEFB25752EDF0042225E /* Main.storyboard */,
+				76881813257E5A9B00024C94 /* MessageCell.xib */,
+				76881812257E5A9B00024C94 /* MessageCell.swift */,
+				76E5B3EA2580F81100E332F7 /* ItemCell.swift */,
+				76E5B3EB2580F81100E332F7 /* ItemCell.xib */,
+				76AB431F25822A2C009742DF /* MailCell.swift */,
+				76AB432025822A2C009742DF /* MailCell.xib */,
+				767ED46D25837F300099E634 /* CartItemCell.swift */,
+				767ED46E25837F300099E634 /* CartItemCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		768C8EFD257667F3003134D1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				76FEEEF925752EDF0042225E /* LogInViewController.swift */,
+				768287762577B45A008617A3 /* SelectViewController.swift */,
+				7682877A2577DA0A008617A3 /* CustomerViewController.swift */,
+				76AB432325822A6F009742DF /* MailBoxViewController.swift */,
+				767ED467258304EF0099E634 /* MailContentViewController.swift */,
+				768287782577C4E4008617A3 /* RegisterViewController.swift */,
+				7683F63D257CFE0E007EB866 /* HelpDeskViewController.swift */,
+				76881810257E592D00024C94 /* SearchViewController.swift */,
+				767ED4712583A2770099E634 /* CartViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		768F5742257920160071EA7D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				768701CD257B768A0011C0E6 /* QRcodeData.swift */,
+				7683F63B257CF9E6007EB866 /* Message.swift */,
+				76E5B3EE2580FD4C00E332F7 /* Item.swift */,
+				76AB432525822CE6009742DF /* MailData.swift */,
+				767ED46B2583366C0099E634 /* CartData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		76FEEEE925752EDF0042225E = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +202,8 @@
 				76FEEF0E25752EE30042225E /* ReiWaBuSanTests */,
 				76FEEF1925752EE30042225E /* ReiWaBuSanUITests */,
 				76FEEEF325752EDF0042225E /* Products */,
+				47558595A937D5AC49179B60 /* Pods */,
+				5D7E90130B7785423927A49E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,13 +220,16 @@
 		76FEEEF425752EDF0042225E /* ReiWaBuSan */ = {
 			isa = PBXGroup;
 			children = (
+				768F5742257920160071EA7D /* Models */,
 				76FEEEF525752EDF0042225E /* AppDelegate.swift */,
-				76FEEEF725752EDF0042225E /* SceneDelegate.swift */,
-				76FEEEF925752EDF0042225E /* ViewController.swift */,
-				76FEEEFB25752EDF0042225E /* Main.storyboard */,
+				7683F637257CEB80007EB866 /* SceneDelegate.swift */,
+				768C8EFD257667F3003134D1 /* Controllers */,
+				768C8EFC257667DB003134D1 /* View */,
 				76FEEF0125752EE20042225E /* Assets.xcassets */,
-				76FEEF0325752EE20042225E /* LaunchScreen.storyboard */,
+				767ED469258329150099E634 /* TempData.swift */,
+				768F57432579204D0071EA7D /* Constant.swift */,
 				76FEEF0625752EE20042225E /* Info.plist */,
+				7682877C2577F298008617A3 /* GoogleService-Info.plist */,
 				76FEEEFE25752EDF0042225E /* ReiWaBuSan.xcdatamodeld */,
 			);
 			path = ReiWaBuSan;
@@ -138,15 +260,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 76FEEF1F25752EE30042225E /* Build configuration list for PBXNativeTarget "ReiWaBuSan" */;
 			buildPhases = (
+				2203C242C08460EFF7F43290 /* [CP] Check Pods Manifest.lock */,
 				76FEEEEE25752EDF0042225E /* Sources */,
 				76FEEEEF25752EDF0042225E /* Frameworks */,
 				76FEEEF025752EDF0042225E /* Resources */,
+				51B59957D1D5E0273AF05A21 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = ReiWaBuSan;
+			packageProductDependencies = (
+				76881817257E8A6000024C94 /* IQKeyboardManagerSwift */,
+			);
 			productName = ReiWaBuSan;
 			productReference = 76FEEEF225752EDF0042225E /* ReiWaBuSan.app */;
 			productType = "com.apple.product-type.application";
@@ -219,6 +346,9 @@
 				Base,
 			);
 			mainGroup = 76FEEEE925752EDF0042225E;
+			packageReferences = (
+				76881816257E8A6000024C94 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+			);
 			productRefGroup = 76FEEEF325752EDF0042225E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -235,7 +365,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76AB432225822A2C009742DF /* MailCell.xib in Resources */,
+				76881815257E5A9B00024C94 /* MessageCell.xib in Resources */,
+				767ED47025837F300099E634 /* CartItemCell.xib in Resources */,
 				76FEEF0525752EE20042225E /* LaunchScreen.storyboard in Resources */,
+				76E5B3ED2580F81100E332F7 /* ItemCell.xib in Resources */,
+				7682877D2577F298008617A3 /* GoogleService-Info.plist in Resources */,
 				76FEEF0225752EE20042225E /* Assets.xcassets in Resources */,
 				76FEEEFD25752EDF0042225E /* Main.storyboard in Resources */,
 			);
@@ -257,15 +392,76 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2203C242C08460EFF7F43290 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReiWaBuSan-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		51B59957D1D5E0273AF05A21 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReiWaBuSan/Pods-ReiWaBuSan-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReiWaBuSan/Pods-ReiWaBuSan-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReiWaBuSan/Pods-ReiWaBuSan-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		76FEEEEE25752EDF0042225E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				767ED46F25837F300099E634 /* CartItemCell.swift in Sources */,
+				768287772577B45A008617A3 /* SelectViewController.swift in Sources */,
 				76FEEF0025752EDF0042225E /* ReiWaBuSan.xcdatamodeld in Sources */,
-				76FEEEFA25752EDF0042225E /* ViewController.swift in Sources */,
+				7683F63E257CFE0E007EB866 /* HelpDeskViewController.swift in Sources */,
+				76FEEEFA25752EDF0042225E /* LogInViewController.swift in Sources */,
+				76E5B3EC2580F81100E332F7 /* ItemCell.swift in Sources */,
+				768287792577C4E4008617A3 /* RegisterViewController.swift in Sources */,
 				76FEEEF625752EDF0042225E /* AppDelegate.swift in Sources */,
-				76FEEEF825752EDF0042225E /* SceneDelegate.swift in Sources */,
+				767ED468258304EF0099E634 /* MailContentViewController.swift in Sources */,
+				7683F638257CEB80007EB866 /* SceneDelegate.swift in Sources */,
+				767ED46A258329160099E634 /* TempData.swift in Sources */,
+				7683F63C257CF9E6007EB866 /* Message.swift in Sources */,
+				767ED46C2583366C0099E634 /* CartData.swift in Sources */,
+				76AB432425822A6F009742DF /* MailBoxViewController.swift in Sources */,
+				767ED4722583A2770099E634 /* CartViewController.swift in Sources */,
+				76AB432625822CE6009742DF /* MailData.swift in Sources */,
+				76881811257E592D00024C94 /* SearchViewController.swift in Sources */,
+				76E5B3EF2580FD4C00E332F7 /* Item.swift in Sources */,
+				768F57442579204D0071EA7D /* Constant.swift in Sources */,
+				76AB432125822A2C009742DF /* MailCell.swift in Sources */,
+				768701CE257B768A0011C0E6 /* QRcodeData.swift in Sources */,
+				7682877B2577DA0A008617A3 /* CustomerViewController.swift in Sources */,
+				76881814257E5A9B00024C94 /* MessageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +469,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76FEEF1025752EE30042225E /* ReiWaBuSanTests.swift in Sources */,
+				7661F4B5257CE1A000245EBB /* ReiWaBuSanTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,6 +632,7 @@
 		};
 		76FEEF2025752EE30042225E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B51073AFA049EDBF0157414A /* Pods-ReiWaBuSan.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -453,6 +650,7 @@
 		};
 		76FEEF2125752EE30042225E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C793AACB666A33A259FDEAA /* Pods-ReiWaBuSan.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -588,6 +786,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		76881816257E8A6000024C94 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.5.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		76881817257E8A6000024C94 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 76881816257E8A6000024C94 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		76FEEEFE25752EDF0042225E /* ReiWaBuSan.xcdatamodeld */ = {

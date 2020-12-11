@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_1-1" translatesAutoresizingMaskIntoConstraints="NO" id="0s2-6O-S9H">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="87Y-n0-9uU">
+                                <rect key="frame" x="144" y="258" width="128" height="128"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reiwa_icon" translatesAutoresizingMaskIntoConstraints="NO" id="RLp-c7-heT">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="rKu-tU-sAh">
+                                <rect key="frame" x="110" y="413" width="194" height="29"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RW物産 for mobile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhO-h2-JLc">
+                                        <rect key="frame" x="0.0" y="0.0" width="194" height="29"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="epF-iM-3CM">
+                                <rect key="frame" x="43" y="463" width="330" height="19.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="住まいから、暮らしの豊かさをお客様に" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n7L-e2-HdX">
+                                        <rect key="frame" x="0.0" y="0.0" width="330" height="19.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" red="0.44593121224993715" green="0.22998438334690108" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="KAa-Jr-CaR">
+                                <rect key="frame" x="198" y="505" width="196" height="20.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Produced by team of Liao" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zud-Bq-LtX">
+                                        <rect key="frame" x="0.0" y="0.0" width="196" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="0s2-6O-S9H" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="EsI-O0-OB0"/>
+                            <constraint firstItem="epF-iM-3CM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="43" id="RHX-35-nOB"/>
+                            <constraint firstItem="87Y-n0-9uU" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" constant="1" id="YYc-xc-hs4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="87Y-n0-9uU" secondAttribute="trailing" constant="142" id="eL1-i1-SlE"/>
+                            <constraint firstItem="rKu-tU-sAh" firstAttribute="centerX" secondItem="0s2-6O-S9H" secondAttribute="centerX" id="fD0-r5-GVZ"/>
+                            <constraint firstItem="0s2-6O-S9H" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="m9m-x9-hR1"/>
+                            <constraint firstItem="epF-iM-3CM" firstAttribute="top" secondItem="rKu-tU-sAh" secondAttribute="bottom" constant="21" id="nEH-Rw-0Jg"/>
+                            <constraint firstItem="epF-iM-3CM" firstAttribute="centerX" secondItem="87Y-n0-9uU" secondAttribute="centerX" id="oTg-rF-XNf"/>
+                            <constraint firstAttribute="bottom" secondItem="0s2-6O-S9H" secondAttribute="bottom" id="skE-35-kub"/>
+                            <constraint firstItem="0s2-6O-S9H" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="wZM-AA-BVB"/>
+                            <constraint firstItem="KAa-Jr-CaR" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailingMargin" id="wgS-PH-SUh"/>
+                            <constraint firstItem="87Y-n0-9uU" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="144" id="wnT-55-bZy"/>
+                            <constraint firstItem="rKu-tU-sAh" firstAttribute="top" secondItem="87Y-n0-9uU" secondAttribute="bottom" constant="27" id="xZm-gk-saY"/>
+                            <constraint firstItem="rKu-tU-sAh" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" constant="413" id="xma-A5-hP7"/>
+                            <constraint firstItem="KAa-Jr-CaR" firstAttribute="top" secondItem="rKu-tU-sAh" secondAttribute="bottom" constant="63" id="zy4-fX-HoW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background_1-1" width="640" height="1136"/>
+        <image name="reiwa_icon" width="128" height="128"/>
+    </resources>
+</document>
