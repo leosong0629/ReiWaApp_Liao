@@ -42,7 +42,7 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
         let nickName = nickNameTextField.text
         let gender = genderSegment.titleForSegment(at: genderSegment.selectedSegmentIndex)!
         let age = "\(ageTextField.text!)"
-        
+        if userPasswordTextField.text == configTextField.text {
         if let userID = userIDTextView.text, let userPassword = userPasswordTextField.text {
             Auth.auth().createUser(withEmail: userID, password: userPassword) { (authDataResult, error) in
                 if let err = error {
@@ -66,8 +66,9 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
                     self.performSegue(withIdentifier: "toCustomerView", sender: self)
                 }
             }
-            
-            
+        }
+        } else {
+            errorMessageLabel.text = "パスワード一致しない"
         }
         
     }
@@ -92,13 +93,5 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
         userPasswordTextField.endEditing(true)
         return true
     }
-    
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any? ){
-//           if segue.identifier == "toCustomerView" {
-//           let customerVC = segue.destination as! CustomerViewController
-//            customerVC.mailAdd = userIDTextView.text!
-//           }
-//           
-//       }
    
 }

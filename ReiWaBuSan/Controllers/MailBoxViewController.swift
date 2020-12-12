@@ -20,8 +20,14 @@ class MailBoxViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        MailTableView.dataSource = self
+        MailTableView.register(UINib(nibName: Ma.mailCellnibName, bundle: nil), forCellReuseIdentifier: Ma.mailCellIdentifier)
+        loadData()
+        if mailArray.count == 0{
+            tabBarItem.badgeValue = nil
+        } else {
+        tabBarItem.badgeValue = "\(mailArray.count)"
+        }
     }
     
     override func viewDidDisappear(_ animated: Bool) {
@@ -29,12 +35,24 @@ class MailBoxViewController: UIViewController {
     }
     
     func loadData() {
-        db.collection(Ma.mailCollection).getDocuments { (querySnapShop, err) in
+        if let userMail = Auth.auth().currentUser?.email {
+        db.collection(Ma.mailCollection + userMail).getDocuments { (querySnapShop, err) in
+            self.mailArray = []
             if let err = err {
                 print("some thing wrong with \(err)")
                 
-            } 
+            }  else {
+                for doc in querySnapShop!.documents {
+                    let data = doc.data()
+                    if let title = data[Ma.mailTitel] as? String,let content = data[Ma.mailContent] as? String{
+                        let newMail = MailData(title: title, content: content)
+                        self.mailArray.append(newMail)
+                        self.MailTableView.reloadData()
+                    }
+                }
+            }
         }
+    }
     }
 }
 
@@ -50,14 +68,12 @@ extension MailBoxViewController: UITableViewDataSource,UITableViewDelegate {
         let cell = MailTableView.dequeueReusableCell(withIdentifier: Ma.mailCellIdentifier, for: indexPath) as! MailCell
         cell.titleTextLabel.text = mail.title
         cell.ContentLabel.text = mail.content
+       
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "MailContentView", sender: self)
         
-            TempData.title = mailArray[indexPath.row].title
-                TempData.content = mailArray[indexPath.row].content
     }
     
    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -66,10 +82,12 @@ extension MailBoxViewController: UITableViewDataSource,UITableViewDelegate {
     MailContentVC.contentTextView.text = TempData.content
     
       }
+    
 }
 
 //MARK: - SearchBar
 extension MailContentViewController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        
     }
 }

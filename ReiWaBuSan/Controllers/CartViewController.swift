@@ -19,6 +19,7 @@ class CartViewController: UIViewController {
         cartTableView.dataSource = self
         cartTableView.register(UINib(nibName: C.cartCellnibName, bundle: nil), forCellReuseIdentifier: C.cartCellIdetifier)
         loadCartData()
+       
     }
     
     @IBAction func refreshButtonTapped(_ sender: UIButton) {
@@ -39,6 +40,11 @@ class CartViewController: UIViewController {
                                 let newData = CartData(itemName: itemName, itemNum: itemNum, itemNO: itemNo, itemDescription: description)
                                 self.cartDataArray.append(newData)
                                 self.cartTableView.reloadData()
+                                if self.cartDataArray.count == 0 {
+                                    self.tabBarItem.badgeValue = nil
+                                } else {
+                                    self.tabBarItem.badgeValue = "\(self.cartDataArray.count)"
+                                }
                             }
                         }
                     }

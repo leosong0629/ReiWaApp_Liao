@@ -11,5 +11,4 @@ import Foundation
 struct MailData {
     let title:String
     let content:String
-    let sender:String
 }

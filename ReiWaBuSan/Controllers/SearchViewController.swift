@@ -37,6 +37,7 @@ extension SearchViewController: UITableViewDataSource {
         cell.ItemNameLabel.text = item.itemName
         cell.ItemDescriptionLabel.text = item.itemDescrption
         cell.itemNOLabel.text = item.itemNo
+        cell.cartButton.isHidden = false
         return cell
     }
     
@@ -61,7 +62,9 @@ extension SearchViewController: UISearchBarDelegate {
                             self.itemArray.append(newItem)
                             self.searchTableView.reloadData()
                             searchBar.scopeButtonTitles?[0] = "\(self.itemArray.count)件一致"
-                           
+                            searchBar.text = ""
+                            searchBar.endEditing(true)
+                            
                         }
                     }
                 }
@@ -69,5 +72,13 @@ extension SearchViewController: UISearchBarDelegate {
         }
     }
     
+    func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
+        searchBar.endEditing(true)
+    }
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.text = ""
+        searchBar.endEditing(true)
+    }
     
 }

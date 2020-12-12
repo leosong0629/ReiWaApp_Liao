@@ -13,6 +13,7 @@ class MailCell: UITableViewCell {
     @IBOutlet weak var titleTextLabel: UILabel!
     @IBOutlet weak var ContentLabel: UILabel!
     @IBOutlet weak var IconLabel: UIImageView!
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -21,6 +22,14 @@ class MailCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
+        if self.accessoryType == .checkmark {
+            self.accessoryType = .none
+            
+        } else {
+            self.accessoryType = .checkmark
+        }
+        
     }
+    
+    
 }
