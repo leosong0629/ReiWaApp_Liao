@@ -28,7 +28,7 @@ Firebase
 7.情報分析機能(Firebase Analytics使用)  
 
 ## Authors
-Jingwei Liao(廖 靖玮_リョウ　セイイ)
+Jingwei Liao
 
 ## References
 Firebase: https://console.firebase.google.com/  
