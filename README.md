@@ -9,7 +9,8 @@ Swift version: unspecified (3~5)
 
 ## 使用言語・ハードウェア
 Macbook  
-macOS Catalina: 10.15.6  ios: 13.7  
+macOS Catalina: 10.15.6  
+ios: 13.7  
 ※：M1チップ搭載のMacに実行できません
 
 ## Demo
