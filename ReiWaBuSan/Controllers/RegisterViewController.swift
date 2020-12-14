@@ -46,7 +46,7 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
         if let userID = userIDTextView.text, let userPassword = userPasswordTextField.text {
             Auth.auth().createUser(withEmail: userID, password: userPassword) { (authDataResult, error) in
                 if let err = error {
-                    self.errorMessageLabel.text = "パスワード/ID錯誤！"
+                    self.errorMessageLabel.text = "ユーザー既に存在する！"
                     print(err)
                 } else {
                      Analytics.logEvent("sign_up", parameters: [
@@ -60,8 +60,9 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
                             print("something wrong with \(err)")
                         } else {
                             print("save success!")
+                            self.errorMessageLabel.text = "ユーザー情報登録した！"
+                             self.performSegue(withIdentifier: "toCustomerView", sender: self)
                         }
-                        self.performSegue(withIdentifier: "toCustomerView", sender: self)
                     }
                 }
             }
@@ -92,5 +93,4 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
         userPasswordTextField.endEditing(true)
         return true
     }
-   
 }

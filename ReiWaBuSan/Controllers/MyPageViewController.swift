@@ -19,6 +19,7 @@ class MyPageViewController: UIViewController {
     @IBOutlet weak var checkBoxButton: UIButton!
     @IBOutlet weak var informationChangeButton: UIButton!
     @IBOutlet weak var logOutButton: UIButton!
+    @IBOutlet weak var messageLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -62,6 +63,7 @@ class MyPageViewController: UIViewController {
                 if let err = err {
                     print(err)
                 } else {
+                    self.messageLabel.text = "ユーザー情報変更しました！"
                     print("update Succeed!")
                 }
             }
@@ -73,13 +75,11 @@ class MyPageViewController: UIViewController {
         let firebaseAuth = Auth.auth()
                do {
                  try firebaseAuth.signOut()
-                    performSegue(withIdentifier: "backToStatrt", sender: self)
+                    performSegue(withIdentifier: "toRoot", sender: self)
                     print("log out successed")
                } catch let signOutError as NSError {
                  print ("Error signing out: %@", signOutError)
                }
         //ユーザーログアウト
     }
-    
-    
 }

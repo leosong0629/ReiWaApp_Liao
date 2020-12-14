@@ -434,14 +434,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DSs-QG-ikh">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DSs-QG-ikh">
                                 <rect key="frame" x="0.0" y="136" width="414" height="677"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
-                            <searchBar contentMode="redraw" fixedFrame="YES" placeholder="商品名を入力ください" showsSearchResultsButton="YES" showsBookmarkButton="YES" showsCancelButton="YES" showsScopeBar="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tFh-rt-aNt">
+                            <searchBar contentMode="redraw" placeholder="商品名を入力ください" showsSearchResultsButton="YES" showsBookmarkButton="YES" showsCancelButton="YES" showsScopeBar="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tFh-rt-aNt">
                                 <rect key="frame" x="0.0" y="33" width="414" height="103"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
                                 <scopeButtonTitles>
                                     <string>商品検索</string>
@@ -452,6 +450,16 @@
                             </searchBar>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="tFh-rt-aNt" firstAttribute="trailing" secondItem="ks9-7u-Ja3" secondAttribute="trailing" id="Azv-BP-dfJ"/>
+                            <constraint firstItem="DSs-QG-ikh" firstAttribute="top" secondItem="tFh-rt-aNt" secondAttribute="bottom" id="COl-QO-aNT"/>
+                            <constraint firstAttribute="bottom" secondItem="DSs-QG-ikh" secondAttribute="bottom" constant="29" id="Evn-kg-PYJ"/>
+                            <constraint firstItem="DSs-QG-ikh" firstAttribute="trailing" secondItem="ks9-7u-Ja3" secondAttribute="trailing" id="JSz-xI-857"/>
+                            <constraint firstItem="tFh-rt-aNt" firstAttribute="leading" secondItem="ks9-7u-Ja3" secondAttribute="leading" id="Mpx-jM-oVU"/>
+                            <constraint firstItem="DSs-QG-ikh" firstAttribute="top" secondItem="tFh-rt-aNt" secondAttribute="bottom" id="W7w-i7-0tr"/>
+                            <constraint firstItem="DSs-QG-ikh" firstAttribute="leading" secondItem="ks9-7u-Ja3" secondAttribute="leading" id="qu1-ZX-uYA"/>
+                            <constraint firstItem="tFh-rt-aNt" firstAttribute="top" secondItem="ks9-7u-Ja3" secondAttribute="top" constant="33" id="yCd-T3-PSP"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ks9-7u-Ja3"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="商品検索" image="magnifyingglass" catalog="system" id="2RQ-JN-KKa"/>
@@ -780,7 +788,6 @@
                                         <state key="normal" title="ログアウト"/>
                                         <connections>
                                             <action selector="logOutButtonTapped:" destination="IJn-cJ-bZi" eventType="touchUpInside" id="Wip-mV-M2Z"/>
-                                            <segue destination="hM7-kY-3aq" kind="show" identifier="backToStatrt" id="gl4-Kw-uh5"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -810,10 +817,18 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7iP-bb-tQt">
+                                <rect key="frame" x="207" y="179" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.55655080079999997" green="0.1806879938" blue="0.16880348319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="Zqq-ct-vRp" firstAttribute="centerX" secondItem="zQu-R9-rJY" secondAttribute="centerX" id="0jd-df-5nl"/>
+                            <constraint firstItem="7iP-bb-tQt" firstAttribute="centerX" secondItem="zQu-R9-rJY" secondAttribute="centerX" id="65E-Ls-Kxc"/>
+                            <constraint firstItem="7iP-bb-tQt" firstAttribute="top" secondItem="r8E-wb-h36" secondAttribute="bottom" constant="73" id="M97-rH-PK7"/>
                             <constraint firstItem="Zqq-ct-vRp" firstAttribute="centerY" secondItem="zQu-R9-rJY" secondAttribute="centerY" id="S6d-Tm-Rv8"/>
                             <constraint firstItem="2zF-7A-26o" firstAttribute="top" secondItem="zQu-R9-rJY" secondAttribute="top" id="UUz-hx-Jiy"/>
                             <constraint firstItem="r8E-wb-h36" firstAttribute="top" secondItem="mQL-Ek-a2u" secondAttribute="top" constant="65" id="Ubk-PH-nCH"/>
@@ -835,7 +850,9 @@
                         <outlet property="genderSegmentation" destination="Q1y-2M-3Hk" id="7eM-dA-mfK"/>
                         <outlet property="informationChangeButton" destination="IMH-1Y-vmc" id="Kf9-RG-aEI"/>
                         <outlet property="logOutButton" destination="x6Q-LK-cu9" id="rLE-je-oVE"/>
+                        <outlet property="messageLabel" destination="7iP-bb-tQt" id="Ogy-Lg-omp"/>
                         <outlet property="nameTextfield" destination="NWT-Fa-Pku" id="qJ0-h8-EIm"/>
+                        <segue destination="hM7-kY-3aq" kind="show" identifier="toRoot" id="eae-8v-fyj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EJg-ET-6if" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -869,7 +886,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="gl4-Kw-uh5"/>
+        <segue reference="eae-8v-fyj"/>
         <segue reference="78R-6m-aEb"/>
     </inferredMetricsTieBreakers>
     <resources>
