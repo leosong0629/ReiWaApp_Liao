@@ -8,7 +8,9 @@ Swift version: unspecified (3~5)
 仮想なお客様（家具屋）のため、簡単なECアプリを作りました
 
 ## 使用言語・ハードウェア
-Macbook  macOS Catalina: 10.15.6  ios: 13.7  ※：M1チップ搭載のMacに実行できません
+Macbook  
+macOS Catalina: 10.15.6  ios: 13.7  
+※：M1チップ搭載のMacに実行できません
 
 ## Demo
 https://app.box.com/folder/127956343904?s=fumla37zoqqnpvsdgvonnh10xjtdbame
@@ -29,9 +31,9 @@ Firebase
 Jingwei Liao(廖 靖玮_リョウ　セイイ)
 
 ## References
-Firebase: https://console.firebase.google.com/
-Cocoapods: https://cocoapods.org/
-IQKeyboardManagerSwift: https://cocoapods.org/pods/IQKeyboardManagerSwift
-stack overflow: https://ja.stackoverflow.com/
-Qitta: https://qiita.com/
-Udemy: https://ibm-learning.udemy.com/course/ios-13-app-development-bootcamp/learn
+Firebase: https://console.firebase.google.com/  
+Cocoapods: https://cocoapods.org/  
+IQKeyboardManagerSwift: https://cocoapods.org/pods/IQKeyboardManagerSwift  
+stack overflow: https://ja.stackoverflow.com/  
+Qitta: https://qiita.com/  
+Udemy: https://ibm-learning.udemy.com/course/ios-13-app-development-bootcamp/learn  
