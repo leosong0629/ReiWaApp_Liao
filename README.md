@@ -19,13 +19,13 @@ https://app.box.com/folder/127956343904?s=fumla37zoqqnpvsdgvonnh10xjtdbame
 Firebase
 
 ## 機能
-1.ユーザー情報登録（Firebase cloud firestore使用）
-2.ユーザーログイン（Firebase Authentication使用）
-3.QRコード、バーコードの生成
-4.リアルタイムチャット機能
-5.商品検索・カート機能（現時点ではFirebase cloud firestoreで登録した簡単な商品情報しか検索できません）
-6.ユーザー情報変更
-7.情報分析機能(Firebase Analytics使用)
+1.ユーザー情報登録（Firebase cloud firestore使用）  
+2.ユーザーログイン（Firebase Authentication使用）  
+3.QRコード、バーコードの生成  
+4.リアルタイムチャット機能  
+5.商品検索・カート機能（現時点ではFirebase cloud firestoreで登録した簡単な商品情報しか検索できません）  
+6.ユーザー情報変更  
+7.情報分析機能(Firebase Analytics使用)  
 
 ## Authors
 Jingwei Liao(廖 靖玮_リョウ　セイイ)
@@ -37,3 +37,5 @@ IQKeyboardManagerSwift: https://cocoapods.org/pods/IQKeyboardManagerSwift
 stack overflow: https://ja.stackoverflow.com/  
 Qitta: https://qiita.com/  
 Udemy: https://ibm-learning.udemy.com/course/ios-13-app-development-bootcamp/learn  
+
+
