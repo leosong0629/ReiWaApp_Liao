@@ -13,6 +13,7 @@ struct U {
     static let nickName: String = "nickName"
     static let gender: String = "gender"
     static let age: String = "age"
+    static let userInformationDocument: String = "information"
     static let messageCellnibName: String = "MessageCell"
     static let cellIdentifier: String = "ReusebleMessbubble"
 }

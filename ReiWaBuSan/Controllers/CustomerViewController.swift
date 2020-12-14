@@ -27,16 +27,6 @@ class CustomerViewController: UIViewController {
         
     }
     
-
-    @IBAction func logOutButton(_ sender: UIButton) {
-        let firebaseAuth = Auth.auth()
-        do {
-          try firebaseAuth.signOut()
-            navigationController?.popToRootViewController(animated: true)
-        } catch let signOutError as NSError {
-          print ("Error signing out: %@", signOutError)
-        }
-    }
     
     func loadInformation() {
         if let userMail = Auth.auth().currentUser?.email{

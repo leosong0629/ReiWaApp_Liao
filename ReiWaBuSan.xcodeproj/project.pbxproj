@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7643B17F2587283B00C42D6C /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7643B17E2587283B00C42D6C /* MyPageViewController.swift */; };
 		7661F4B5257CE1A000245EBB /* ReiWaBuSanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FEEF0F25752EE30042225E /* ReiWaBuSanTests.swift */; };
 		767ED468258304EF0099E634 /* MailContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767ED467258304EF0099E634 /* MailContentViewController.swift */; };
 		767ED46A258329160099E634 /* TempData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767ED469258329150099E634 /* TempData.swift */; };
@@ -64,6 +65,7 @@
 /* Begin PBXFileReference section */
 		554B2409712A5A68E3392187 /* Pods_ReiWaBuSan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReiWaBuSan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C793AACB666A33A259FDEAA /* Pods-ReiWaBuSan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReiWaBuSan.release.xcconfig"; path = "Target Support Files/Pods-ReiWaBuSan/Pods-ReiWaBuSan.release.xcconfig"; sourceTree = "<group>"; };
+		7643B17E2587283B00C42D6C /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
 		767ED467258304EF0099E634 /* MailContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailContentViewController.swift; sourceTree = "<group>"; };
 		767ED469258329150099E634 /* TempData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempData.swift; sourceTree = "<group>"; };
 		767ED46B2583366C0099E634 /* CartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartData.swift; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 				7683F63D257CFE0E007EB866 /* HelpDeskViewController.swift */,
 				76881810257E592D00024C94 /* SearchViewController.swift */,
 				767ED4712583A2770099E634 /* CartViewController.swift */,
+				7643B17E2587283B00C42D6C /* MyPageViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -446,6 +449,7 @@
 				76FEEEFA25752EDF0042225E /* LogInViewController.swift in Sources */,
 				76E5B3EC2580F81100E332F7 /* ItemCell.swift in Sources */,
 				768287792577C4E4008617A3 /* RegisterViewController.swift in Sources */,
+				7643B17F2587283B00C42D6C /* MyPageViewController.swift in Sources */,
 				76FEEEF625752EDF0042225E /* AppDelegate.swift in Sources */,
 				767ED468258304EF0099E634 /* MailContentViewController.swift in Sources */,
 				7683F638257CEB80007EB866 /* SceneDelegate.swift in Sources */,

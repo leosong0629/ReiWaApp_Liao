@@ -55,15 +55,14 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
                     Analytics.setUserProperty(gender, forName: P.userGender)//性別属性を記録する
                     
                     Analytics.setUserProperty(age, forName: P.userAge)//年齢属性を記録する
-                    
-                    self.db.collection(userID).addDocument(data: [U.userID:userID, U.nickName: nickName!, U.gender: gender, U.age: age]) { (error) in
-                        if let e = error {
-                           print(e)
+                    self.db.collection(userID).document(U.userInformationDocument).setData( [U.userID:userID, U.nickName: nickName!, U.gender: gender, U.age: age]) { (err) in
+                        if let err = err{
+                            print("something wrong with \(err)")
                         } else {
-                            print("save sucess!")
+                            print("save success!")
                         }
+                        self.performSegue(withIdentifier: "toCustomerView", sender: self)
                     }
-                    self.performSegue(withIdentifier: "toCustomerView", sender: self)
                 }
             }
         }
